@@ -1,0 +1,16 @@
+{
+  "name": "ahead",
+  "repo": "manuelstofer/ahead",
+  "description": "An experiment with promises",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "then/promise": "*",
+    "then/is-promise": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ahead",
+  "version": "0.0.1",
+  "description": "An experiment with promises",
+  "main": "index.js",
+  "dependencies": {
+    "is-promise": "~1.0.0",
+    "promise": "~2.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:manuelstofer/ahead.git"
+  },
+  "keywords": [
+    "promise",
+    "promises",
+    "then"
+  ],
+  "author": "Manuel Stofer",
+  "license": "MIT",
+  "readmeFilename": "Readme.md"
+}
