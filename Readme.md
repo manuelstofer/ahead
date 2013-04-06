@@ -1,6 +1,6 @@
 # Ahead
 
-An experiment with promises
+An experiment with [promises](http://wiki.commonjs.org/wiki/Promises/A)
 
 ## Some examples
 
