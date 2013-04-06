@@ -10,9 +10,16 @@ An experiment with promises
 var ahead = require('ahead');
 ```
 
-Ahead is a easy way to create a promise
-- kept to keep a promise
-- broken to break a promise
+Ahead provides a easy way to create promises. And lets you write
+asynchronous stuff that looks synchronous. Its thought as an experiment
+and not for real use. Error handling can get pretty confusing.
+
+
+
+It adds two arguments to a function.
+
+- kept to keep the promise
+- broken to break the promise
 
 ```Javascript
 var random = ahead(function (delay, kept, broken) {
@@ -31,8 +38,7 @@ var multiply = ahead(function (a, b, keep) {
 });
 ```
 
-Ahead.shift converts a synchronous function
-(shifts it in time ahead)
+Ahead.shift converts a synchronous function (shifts it in time ahead).
 
 ```Javascript
 var pow = ahead.shift(function (a, b) {
