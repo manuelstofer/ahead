@@ -30,8 +30,6 @@ var random = ahead(function (delay, kept, broken) {
 
 var r = random(10);  // creates a promise for a random number
 r.then(function (number) { console.log(number);});
-
-
 ```
 
 Functions created with ahead can take promises as arguments
