@@ -27,6 +27,11 @@ var random = ahead(function (delay, kept, broken) {
         kept(Math.random());
     }, delay);
 });
+
+var r = random(10);  // creates a promise for a random number
+r.then(function (number) { console.log(number);});
+
+
 ```
 
 Functions created with ahead can take promises as arguments
@@ -36,6 +41,8 @@ the execution gets deferred until all promised arguments are resolved
 var multiply = ahead(function (a, b, keep) {
     keep(a * b);
 });
+
+multiply(random(10), 3); // just looks synchronous
 ```
 
 Ahead.shift converts a synchronous function (shifts it in time ahead).
