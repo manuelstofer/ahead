@@ -36,8 +36,8 @@ Functions created with ahead can take promises as arguments
 the execution gets deferred until all promised arguments are resolved
 
 ```Javascript
-var multiply = ahead(function (a, b, keep) {
-    keep(a * b);
+var multiply = ahead(function (a, b, kept) {
+    kept(a * b);
 });
 
 multiply(random(10), 3); // just looks synchronous
