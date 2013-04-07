@@ -46,9 +46,7 @@ multiply(random(10), 3); // just looks synchronous
 Ahead.shift converts a synchronous function (shifts it in time ahead).
 
 ```Javascript
-var pow = ahead.shift(function (a, b) {
-    return Math.pow(a, b);
-});
+var pow = ahead.shift(Math.pow);
 ```
 
 Lets shift console.log in time ahead
